@@ -1,0 +1,356 @@
+Name,countyfips,placefips
+Aguilar in Las Animas,71,760
+Akron in Washington,121,925
+Alamosa in Alamosa,3,1090
+Alma in Park,93,1530
+Antonito in Conejos,21,2355
+Arriba in Lincoln,73,3235
+Arvada (Part) in Adams,1,3455
+Arvada (Part) in Jefferson,59,3455
+Aspen in Pitkin,97,3620
+Ault in Weld,123,3950
+Aurora (Part) in Arapahoe,5,4000
+Aurora (Part) in Adams,1,4000
+Aurora (Part) in Douglas,35,4000
+Avon in Eagle,37,4110
+Basalt (Part) in Eagle,37,4935
+Basalt (Part) in Pitkin,97,4935
+Bayfield in La Plata,67,5265
+Bennett (Part) in Arapahoe,5,6090
+Bennett (Part) in Adams,1,6090
+Berthoud (Part) in Weld,123,6255
+Berthoud (Part) in Larimer,69,6255
+Bethune in Kit Carson,63,6530
+Black Hawk in Gilpin,47,7025
+Blanca in Costilla,23,7190
+Blue River in Summit,117,7410
+Bonanza City in Saguache,109,7571
+Boone in Pueblo,101,7795
+Boulder in Boulder,13,7850
+Bow Mar (Part) in Jefferson,59,8070
+Bow Mar (Part) in Arapahoe,5,8070
+Branson in Las Animas,71,8345
+Breckenridge in Summit,117,8400
+Brighton (Part) in Adams,1,8675
+Brighton (Part) in Weld,123,8675
+Brookside in Fremont,43,9115
+Broomfield in Broomfield,14,9280
+Brush in Morgan,87,9555
+Buena Vista in Chaffee,15,10105
+Burlington in Kit Carson,63,10600
+Calhan in El Paso,41,11260
+Campo in Baca,9,11645
+Canon City in Fremont,43,11810
+Carbondale in Garfield,45,12045
+City of Castle Pines in Douglas,35,12387
+Castle Rock in Douglas,35,12415
+Cedaredge in Delta,29,12635
+Centennial in Arapahoe,5,12815
+Center (Part) in Saguache,109,12855
+Center (Part) in Rio Grande,105,12855
+Central City (Part) in Clear Creek,19,12910
+Central City (Part) in Gilpin,47,12910
+Cheraw in Otero,89,13460
+Cherry Hills Village in Arapahoe,5,13845
+Cheyenne Wells in Cheyenne,17,14175
+City of Creede in Mineral,79,14765
+Coal Creek in Fremont,43,15330
+Cokedale in Las Animas,71,15550
+Collbran in Mesa,77,15605
+Colorado Springs in El Paso,41,16000
+Columbine Valley in Arapahoe,5,16385
+Commerce City in Adams,1,16495
+Cortez in Montezuma,83,17375
+Craig in Moffat,81,17760
+Crawford in Delta,29,17925
+Crested Butte in Gunnison,51,18310
+Crestone in Saguache,109,18420
+Cripple Creek in Teller,119,18530
+Crook in Logan,75,18640
+Crowley in Crowley,25,18750
+Dacono in Weld,123,19080
+De Beque in Mesa,77,19355
+Deer Trail in Arapahoe,5,19630
+Del Norte in Rio Grande,105,19795
+Delta in Delta,29,19850
+Denver in Denver,31,20000
+Dillon in Summit,117,20440
+Dinosaur in Moffat,81,20495
+Dolores in Montezuma,83,20770
+Dove Creek in Dolores,33,21265
+Durango in La Plata,67,22035
+Eads in Kiowa,61,22145
+Eagle in Eagle,37,22200
+Eaton in Weld,123,22860
+Eckley in Yuma,125,23025
+Edgewater in Jefferson,59,23135
+Elizabeth in Elbert,39,23740
+Empire in Clear Creek,19,24620
+Englewood in Arapahoe,5,24785
+Erie (Part) in Boulder,13,24950
+Erie (Part) in Weld,123,24950
+Estes Park in Larimer,69,25115
+Evans in Weld,123,25280
+Fairplay in Park,93,25610
+Federal Heights in Adams,1,26270
+Firestone in Weld,123,26600
+Flager in Kit Carson,63,26765
+Fleming in Logan,75,26875
+Florence in Fremont,43,27040
+Fort Collins in Larimer,69,27425
+Fort Lupton in Weld,123,27700
+Fort Morgan in Morgan,87,27810
+Fountain in El Paso,41,27865
+Fowler in Otero,89,27975
+Foxfield in Arapahoe,5,28105
+Fraser in Grand,49,28305
+Frederick in Weld,123,28360
+Frisco in Summit,117,28690
+Fruita in Mesa,77,28745
+Garden City in Weld,123,29185
+Genoa in Lincoln,73,29680
+Georgetown in Clear Creek,19,29735
+Gilcrest in Weld,123,29955
+Glendale in Arapahoe,5,30340
+Glenwood Springs in Garfield,45,30780
+Golden in Jefferson,59,30835
+Granada in Prowers,99,31550
+Granby in Grand,49,31605
+Grand Junction in Mesa,77,31660
+Grand Lake in Grand,49,31715
+Greeley in Weld,123,32155
+Green Mtn. Falls (Part) in Teller,119,32650
+Green Mtn. Falls (Part) in El Paso,41,32650
+Greenwood Village in Arapahoe,5,33035
+Grover in Weld,123,33310
+Gunnison in Gunnison,51,33640
+Gypsum in Eagle,37,33695
+Hartman in Prowers,99,34520
+Haswell in Kiowa,61,34740
+Haxtun in Phillips,95,34960
+Hayden in Routt,107,35070
+Hillrose in Morgan,87,36610
+Holly in Prowers,99,37215
+Holyoke in Phillips,95,37270
+Hooper in Alamosa,3,37380
+Hotchkiss in Delta,29,37545
+Hot Sulphur Springs in Grand,49,37600
+Hudson in Weld,123,37820
+Hugo in Lincoln,73,37875
+Idaho Sprgs in Clear Creek,19,38370
+Ignacio in La Plata,67,38535
+Iliff in Logan,75,38590
+Jamestown in Boulder,13,39195
+Johnstown (Part) in Weld,123,39855
+Johnstown (Part) in Larimer,69,39855
+Julesburg in Sedgwick,115,39965
+Keenesburg in Weld,123,40185
+Kersey in Weld,123,40515
+Kim in Las Animas,71,40570
+Kiowa in Elbert,39,40790
+Kit Carson in Cheyenne,17,41010
+Kremmling in Grand,49,41560
+Lafayette in Boulder,13,41835
+La Jara in Conejos,21,42055
+La Junta in Otero,89,42110
+Lake City in Hinsdale,53,42330
+Lakeside in Jefferson,59,42495
+Lakewood in Jefferson,59,43000
+Lamar in Prowers,99,43110
+Larkspur in Douglas,35,43550
+La Salle in Weld,123,43605
+Las Animas in Bent,11,43660
+La Veta in Huerfano,55,44100
+Leadville in Lake,65,44320
+Limon in Lincoln,73,44980
+Littleton (Part) in Douglas,35,45255
+Littleton (Part) in Arapahoe,5,45255
+Littleton (Part) in Jefferson,59,45255
+Lochbuie (Part) in Adams,1,45530
+Lochbuie (Part) in Weld,123,45530
+Log Lane Village in Morgan,87,45695
+Lone Tree in Douglas,35,45955
+Longmont (Part) in Boulder,13,45970
+Longmont (Part) in Weld,123,45970
+Louisville in Boulder,13,46355
+Loveland in Larimer,69,46465
+Lyons in Boulder,13,47070
+Manassa in Conejos,21,48060
+Mancos in Montezuma,83,48115
+Manitou Springs in El Paso,41,48445
+Manzanola in Otero,89,48500
+Marble in Gunnison,51,48555
+Mead in Weld,123,49600
+Meeker in Rio Blanco,103,49875
+Merino in Logan,75,50040
+Milliken in Weld,123,50480
+Minturn in Eagle,37,50920
+Moffat in Saguache,109,51250
+Monte Vista in Rio Grande,105,51635
+Montezuma in Summit,117,51690
+Montrose in Montrose,85,51745
+Monument in El Paso,41,51800
+Morrison in Jefferson,59,52075
+Mountain View in Jefferson,59,52350
+Mountain Village in San Miguel,113,52550
+Mount Crested Butte/G in Gunnison,51,52570
+Naturita in Montrose,85,53120
+Nederland in Boulder,13,53175
+New Castle in Garfield,45,53395
+Northglenn (Part) in Adams,1,54330
+Northglenn (Part) in Weld,123,54330
+Norwood in San Miguel,113,54880
+Nucla in Montrose,85,54935
+Nunn in Weld,123,55045
+Oak Creek in Routt,107,55155
+Olathe in Montrose,85,55540
+Olney Springs in Crowley,25,55705
+Ophir in San Miguel,113,55870
+Orchard City in Delta,29,55980
+Ordway in Crowley,25,56145
+Otis in Washington,121,56365
+Ouray in Ouray,91,56420
+Ovid in Sedgwick,115,56475
+Pagosa Springs in Archuleta,7,56860
+Palisade in Mesa,77,56970
+Palmer Lake in El Paso,41,57025
+Paoli in Phillips,95,57245
+Paonia in Delta,29,57300
+Parachute in Garfield,45,57400
+Parker in Douglas,35,57630
+Peetz in Logan,75,58235
+Pierce in Weld,123,59005
+Pitkin in Gunnison,51,59830
+Platteville in Weld,123,60160
+Poncha Springs in Chaffee,15,60600
+Pritchett in Baca,9,61315
+Pueblo in Pueblo,101,62000
+Ramah in El Paso,41,62660
+Rangely in Rio Blanco,103,62880
+Raymer in Weld,123,63045
+Red Cliff in Eagle,37,63265
+Rico in Dolores,33,64090
+Ridgway in Ouray,91,64200
+Rifle in Garfield,45,64255
+Rockvale in Fremont,43,64970
+Rocky Ford in Otero,89,65190
+Romeo in Conejos,21,65740
+Rye in Pueblo,101,66895
+Saguache in Saguache,109,67005
+Salida in Chaffee,15,67280
+Sanford in Conejos,21,67830
+San Luis in Costilla,23,68105
+Sawpit in San Miguel,113,68655
+Sedgwick in Sedgwick,115,68930
+Seibert in Kit Carson,63,69040
+Severance in Weld,123,69150
+Sheridan in Arapahoe,5,69645
+Sheridan Lake in Kiowa,61,69700
+Silt in Garfield,45,70195
+Silver Cliff in Custer,27,70250
+Silver Plume in Clear Creek,19,70360
+Silverthorne in Summit,117,70525
+Silverton in San Juan,111,70580
+Simla in Elbert,39,70635
+Snowmass Village in Pitkin,97,71755
+South Fork in Rio Grande,105,72395
+Springfield in Baca,9,73330
+Starkville in Las Animas,71,73715
+Steamboat Springs in Routt,107,73825
+Sterling in Logan,75,73935
+Stratton in Kit Carson,63,74485
+Sugar City in Crowley,25,74815
+Superior (Part) in Jefferson,59,75640
+Superior (Part) in Boulder,13,75640
+Swink in Otero,89,75970
+Telluride in San Miguel,113,76795
+Thornton (Part) in Weld,123,77290
+Thornton (Part) in Adams,1,77290
+Timnath in Larimer,69,77510
+Trinidad in Las Animas,71,78610
+Two Buttes in Baca,9,79270
+Vail in Eagle,37,80040
+Victor in Teller,119,80865
+Vilas in Baca,9,81030
+Vona in Kit Carson,63,81690
+Walden in Jackson,57,82130
+Walsenburg in Huerfano,55,82350
+Walsh in Baca,9,82460
+Ward in Boulder,13,82735
+Wellington in Larimer,69,83230
+Westcliffe in Custer,27,83450
+Westminster (Part) in Jefferson,59,83835
+Westminster (Part) in Adams,1,83835
+Wheat Ridge in Jefferson,59,84440
+Wiggins in Morgan,87,84770
+Wiley in Prowers,99,85045
+Williamsburg in Fremont,43,85155
+Windsor (Part) in Weld,123,85485
+Windsor (Part) in Larimer,69,85485
+Winter Park in Grand,49,85705
+Woodland Park in Teller,119,86090
+Wray in Yuma,125,86310
+Yampa in Routt,107,86475
+Yuma in Yuma,125,86750
+Unincorporated Sedgwick,115,99990
+Unincorporated Summit,117,99990
+Unincorporated Washington,121,99990
+Unincorporated San Juan,111,99990
+Unincorporated San Miguel,113,99990
+Unincorporated Teller,119,99990
+Unincorporated Bent,11,99990
+Unincorporated Logan,75,99990
+Unincorporated Montezuma,83,99990
+Unincorporated Elbert,39,99990
+Unincorporated El Paso,41,99990
+Unincorporated Moffat,81,99990
+Unincorporated Fremont,43,99990
+Unincorporated Garfield,45,99990
+Unincorporated Mineral,79,99990
+Unincorporated Gilpin,47,99990
+Unincorporated Grand,49,99990
+Unincorporated Mesa,77,99990
+Unincorporated Arapahoe,5,99990
+Unincorporated Pueblo,101,99990
+Unincorporated Hinsdale,53,99990
+Unincorporated Montrose,85,99990
+Unincorporated Huerfano,55,99990
+Unincorporated Jackson,57,99990
+Unincorporated Jefferson,59,99990
+Unincorporated Kiowa,61,99990
+Unincorporated Lincoln,73,99990
+Unincorporated Kit Carson,63,99990
+Unincorporated Lake,65,99990
+Unincorporated Las Animas,71,99990
+Unincorporated La Plata,67,99990
+Unincorporated Larimer,69,99990
+Unincorporated Archuleta,7,99990
+Unincorporated Gunnison,51,99990
+Unincorporated Custer,27,99990
+Unincorporated Weld,123,99990
+Unincorporated Yuma,125,99990
+Unincorporated Boulder,13,99990
+Unincorporated Pitkin,97,99990
+Unincorporated Chaffee,15,99990
+Unincorporated Phillips,95,99990
+Unincorporated Cheyenne,17,99990
+Unincorporated Clear Creek,19,99990
+Unincorporated Conejos,21,99990
+Unincorporated Park,93,99990
+Unincorporated Costilla,23,99990
+Unincorporated Eagle,37,99990
+Unincorporated Crowley,25,99990
+Unincorporated Douglas,35,99990
+Unincorporated Delta,29,99990
+Unincorporated Baca,9,99990
+Unincorporated Alamosa,3,99990
+Unincorporated Dolores,33,99990
+Unincorporated Otero,89,99990
+Unincorporated Adams,1,99990
+Unincorporated Morgan,87,99990
+Unincorporated Rio Blanco,103,99990
+Unincorporated Rio Grande,105,99990
+Unincorporated Routt,107,99990
+Unincorporated Saguache,109,99990
+Unincorporated Prowers,99,99990
+Unincorporated Ouray,91,99990

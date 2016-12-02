@@ -35,23 +35,8 @@
             });
         </script>
         <style>
-          .datalink {
-    float: right;
-    font-size: 90%;
-    color: black;
-    text-decoration: none;
-    top: 0px;
-    margin-top: -20px;
-    width: 190px;
-    right: 10px;
-    display: block;
-    cursor: pointer;
-    font-weight: bold;
-    background-color: #bad0e7;
-    line-height: 26px;
-    margin-right: 2px;
-    text-align: center;
-    border: .25px solid rgb(149,149,149);
+th {
+    text-align: left;
 }
         </style>
 
@@ -138,6 +123,56 @@
                       </ul>
                       <span style="font-weight: bold;">Definitions:</span>
                       <br>
+                      <h5>Building Permits</h5>
+                      <ul>
+                        <li>Building permit that results in a new residential unit being created.</li>
+                        <li>Monthly data on number of units permitted.</li>
+                        <li>We assume a 6 month lag, so for vintage 2016, we'll use calendar year 2015 building permits to determine housing unit change if certificates of occupancy aren't submitted.</li>
+                      </ul>
+                      <h5>Certificates of Occupancy</h5>
+                      <ul>
+                        <li>Certificates of occupancy or closed building permit that results in a new residential unit being finished.</li>
+                        <li>Monthly data of number of units CO'd.</li>
+                        <li>We assume that a unit would be actively in the housing stock and available for habitation immediately after, so we use the permits from July 1 of the previous year to June 30 of the estimate year to detemrine housing unit change.</li>
+                      </ul>
+                      <h5>Demolition Permits</h5>
+                      <ul>
+                        <li>Demolition permits that would lead to the loss of a residential unit. These would not include joint demolition and building permits that allow demolition and rebuilding on one permit.</li>
+                        <li>Monthly data of number of units permitted for demolition.</li>
+                        <li>We assume that a unit where a demolition permit has been issued will be unavilable as housing stock as soon as the permit is issued. We use the permits from July 1 of the previous year to June 30 of the estimate year to detemrine housing unit change.</li>
+                      </ul>
+                      <h5>Mobile Housing Units</h5>
+                      <ul>
+                        <li>Mobile housing units are measured with a count of units placed.</li>
+                        <li>Semi-annual mobile housing unit counts, January 1 to June 30 and July 1 to December 31.</li>
+                        <li>We assume that a unit is available as housing stock as soon as it is placed.  We use counts for the first and second half of each year, but apply the housing unit growth using the same timeline as certificates of occupancy.</li>
+                      </ul>
+                      <br>
+                      
+                      <table>
+  <tr>
+    <th>Data Type</th>
+    <th>Time Period for Vintage 2016</th>
+  </tr>
+  <tr>
+    <td>Building Permits</td>
+    <td>January 1, 2015 to December 31, 2015</td>
+  </tr>
+   <tr>
+    <td>Certificates of Occupancy</td>
+    <td>July 1, 2015 to June 30, 2016</td>
+  </tr>
+     <tr>
+    <td>Demolition Permits</td>
+    <td>July 1, 2015 to June 30, 2016</td>
+  </tr>
+     <tr>
+    <td>Mobile Housing Units</td>
+    <td>July 1, 2015 to June 30, 2016 (Half year)</td>
+  </tr>
+
+</table>
+  <br>
                       
                       <span style="font-weight: bold;">Materials:</span>
                       <br>

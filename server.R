@@ -4,24 +4,66 @@ source("setup.R")
 
 function(input, output, session) {
 
-  id=reactive({filter(areas, Name==input$area)%>%
-                              select(id)})
+  id=reactive({as.numeric(filter(areas, Name==input$area)%>%
+                              select(id))})
   
   output$contact=renderTable({
     contact%>%
       filter(id==id())%>%
-      gather(Field, Current)
-  })
+      gather(Field, Current)}
+  )
   
-  output$permits=renderTable({
+  output$permits=renderTable({ 
     bp%>%
-      filter(id==id()$id)%>%
-      select(year:sep)
-  })
+      filter(id==id())%>%
+      select(year:dec)},
+    digits=0
+    )
   
   output$co=renderTable({
-    id()
-  })
+    co%>%
+      filter(id==id())%>%
+      select(year:dec)},
+    digits=0
+  )
 
-    
+  output$demo=renderTable({
+    demo%>%
+      filter(id==id())%>%
+      select(year:dec)},
+    digits=0
+  )
+
+  output$mobile=renderTable({
+    mobile%>%
+      filter(id==id())%>%
+      select(-id:-place)},
+    digits=0
+  )
+  
+  output$sdo=renderTable({
+    sdo%>%
+      filter(id==id())%>%
+      mutate(PopulationChange=Population-lag(Population),
+             HousingUnitChange=HousingUnits-lag(HousingUnits))%>%
+      select(year, Population, HousingUnits, PopulationChange, HousingUnitChange)%>%
+      filter(year<2015)},
+                         digits = 0)
+
+output$census=renderTable({
+  census%>%
+    filter(id==id())%>%
+    mutate(PopulationChange=Population-lag(Population),
+           HousingUnitChange=HousingUnits-lag(HousingUnits))%>%
+    select(year, Population, HousingUnits, PopulationChange, HousingUnitChange)%>%
+    filter(year<2015)},
+  digits = 0)
+
+output$annex=renderTable({
+  annex%>%
+    filter(id==id())%>%
+    select(year, PopulationChange:GroupQuartersChange)%>%
+    filter(year<2015)},
+  digits = 0)
+
 }

@@ -3,18 +3,17 @@ library(shiny)
 
 source("setup.R")  
 
-
 function(req) {
   htmlTemplate("index.html",
-               area=selectInput("area","Select your Area:", choices = unique(areas$Name), selected = 'Aguilar in Las Animas'),               contacts=renderTable("contacts"),
-               contact_info=renderTable("contact"),
-               permits=renderTable("permits"),
-               co=renderTable("co"),
-               demo=renderTable("demo"),
-               mobile=renderTable("mobile"),
-               sdo_estimates=renderTable("sdo"),
-               census_estimates=renderTable("census"),
-               annexations=renderTable("annex")
+               area=selectInput("area","Select your Area:", choices = unique(areas$Name)),               
+               contact_info=tableOutput("contact"),
+               permits=tableOutput("permits"),
+               co=tableOutput("co"),
+               demo=tableOutput("demo"),
+               mobile=tableOutput("mobile"),
+               sdo_estimates=tableOutput("sdo"),
+               census_estimates=tableOutput("census"),
+               annexations=tableOutput("annex")
                )
 }
 

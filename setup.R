@@ -4,7 +4,7 @@ library(dplyr)
 library(stringr)
 library(car)
 
-bp=read_excel("construction_data.xlsx", sheet = 1)%>%
+bp=read_excel("construction_data.xlsx", sheet = 5)%>%
   select(-Btot2010:-PlaceFIPS)%>%
   gather(variable, value, -county:-place)%>%
   filter(place!="00000")%>%
@@ -15,7 +15,7 @@ bp=read_excel("construction_data.xlsx", sheet = 1)%>%
          place=as.numeric(place), 
          id=as.numeric(paste0(county,place)))%>%
   select(id, county, place, month, year, permits=value)%>%
-  filter(year<2016)%>%
+  filter(year<2017)%>%
   spread(month, permits)
 
 co=read_excel("construction_data.xlsx", sheet = 2)%>%
@@ -29,7 +29,7 @@ co=read_excel("construction_data.xlsx", sheet = 2)%>%
          place=as.numeric(place), 
          id=as.numeric(paste0(county,place)))%>%
   select(id,county, place, month, year, certs=value)%>%
-  filter(year<2016)%>%
+  filter(year<2017)%>%
   spread(month, certs)
 
 
@@ -44,7 +44,7 @@ demo=read_excel("construction_data.xlsx", sheet = 3)%>%
          place=as.numeric(place), 
          id=as.numeric(paste0(county,place)))%>%
   select(id,county, place, month, year, demo=value)%>%
-  filter(year<2016)%>%
+  filter(year<2017)%>%
   spread(month, demo)
 
 mobile=read_excel("construction_data.xlsx", sheet = 4)%>%
@@ -56,7 +56,7 @@ mobile=read_excel("construction_data.xlsx", sheet = 4)%>%
          place=as.numeric(place), 
          id=as.numeric(paste0(county,place)))%>%
   select(id, county, place, half_year, year, mobile=value)%>%
-  filter(year<2016)%>%
+  filter(year<2017)%>%
   spread(half_year, mobile)
 
 contact=read.csv("contact_info.csv", stringsAsFactors = FALSE)%>%
@@ -97,7 +97,7 @@ annex=read.csv("rcs_annex.csv")%>%
   rename(county=CountyFIPS, place=PlaceFIPS)%>%
   gather(variable, value, -county:-place)%>%
   mutate(year=str_sub(variable, -4,-1),
-         year=recode(year, "1011=2011; 1112=2012; 1213=2013; 1314=2014; 1415=2015"),
+         year=recode(year, "1011=2011; 1112=2012; 1213=2013; 1314=2014; 1415=2015; 1516=2016"),
          variable=str_sub(variable, 1,-5),
          id=as.numeric(paste0(county,place)))%>%
   spread(variable, value)%>%

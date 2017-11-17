@@ -4,59 +4,91 @@ library(dplyr)
 library(stringr)
 library(car)
 
-bp=read_excel("construction_data.xlsx", sheet = 5)%>%
-  select(-Btot2010:-PlaceFIPS)%>%
-  gather(variable, value, -county:-place)%>%
-  filter(place!="00000")%>%
-  mutate(month=str_sub(str_sub(variable, 1,4),2,4),
+# bpold=read_excel("construction_data.xlsx", sheet = 5)%>%
+#   select(-Btot2010:-PlaceFIPS)%>%
+#   gather(variable, value, -county:-place)%>%
+#   filter(place!="00000")%>%
+#   mutate(month=str_sub(str_sub(variable, 1,4),2,4),
+#          month=ordered(month, levels=c("jan", "feb", "mar", "apr", "may", "jun", "jul", "aug", "sep", "oct", "nov", "dec")),
+#          year=as.integer(paste0("20", str_sub(variable, -2,-1))),
+#          county=as.numeric(county),
+#          place=as.numeric(place), 
+#          id=as.numeric(paste0(county,place)))%>%
+#   select(id, county, place, month, year, permits=value)%>%
+#   filter(year<2017)%>%
+#   spread(month, permits)
+
+bp=read_excel("construction_data_long.xlsx", sheet = 1)%>%
+  subset(place!="00000")%>%
+  mutate(month=tolower(str_sub(str_sub(month, 1,3))),
          month=ordered(month, levels=c("jan", "feb", "mar", "apr", "may", "jun", "jul", "aug", "sep", "oct", "nov", "dec")),
-         year=as.integer(paste0("20", str_sub(variable, -2,-1))),
-         county=as.numeric(county),
-         place=as.numeric(place), 
+         place=as.numeric(place),
          id=as.numeric(paste0(county,place)))%>%
   select(id, county, place, month, year, permits=value)%>%
-  filter(year<2017)%>%
   spread(month, permits)
 
-co=read_excel("construction_data.xlsx", sheet = 2)%>%
-  select(-C1011:-C2021)%>%
-  rename(county=CountyFIPS, place=PlaceFIPS)%>%
-  gather(variable, value, -county:-place)%>%
-  mutate(month=str_sub(str_sub(variable, 1,4),2,4),
+# coold=read_excel("construction_data.xlsx", sheet = 2)%>%
+#   select(-C1011:-C2021)%>%
+#   rename(county=CountyFIPS, place=PlaceFIPS)%>%
+#   gather(variable, value, -county:-place)%>%
+#   mutate(month=str_sub(str_sub(variable, 1,4),2,4),
+#          month=ordered(month, levels=c("jan", "feb", "mar", "apr", "may", "jun", "jul", "aug", "sep", "oct", "nov", "dec")),
+#          year=as.integer(paste0("20", str_sub(variable, -2,-1))),
+#          county=as.numeric(county),
+#          place=as.numeric(place), 
+#          id=as.numeric(paste0(county,place)))%>%
+#   select(id,county, place, month, year, certs=value)%>%
+#   filter(year<2017)%>%
+#   spread(month, certs)
+
+co=read_excel("construction_data_long.xlsx", sheet = 2)%>%
+  subset(place!="00000")%>%
+  mutate(month=tolower(str_sub(str_sub(month, 1,3))),
          month=ordered(month, levels=c("jan", "feb", "mar", "apr", "may", "jun", "jul", "aug", "sep", "oct", "nov", "dec")),
-         year=as.integer(paste0("20", str_sub(variable, -2,-1))),
-         county=as.numeric(county),
-         place=as.numeric(place), 
+         place=as.numeric(place),
          id=as.numeric(paste0(county,place)))%>%
   select(id,county, place, month, year, certs=value)%>%
-  filter(year<2017)%>%
   spread(month, certs)
 
+# demoold=read_excel("construction_data.xlsx", sheet = 3)%>%
+#   select(-D1011:-D2021)%>%
+#   rename(county=CountyFIPS, place=PlaceFIPS)%>%
+#   gather(variable, value, -county:-place)%>%
+#   mutate(month=str_sub(str_sub(variable, 1,4),2,4),
+#          month=ordered(month, levels=c("jan", "feb", "mar", "apr", "may", "jun", "jul", "aug", "sep", "oct", "nov", "dec")),
+#          year=as.integer(paste0("20", str_sub(variable, -2,-1))),
+#          county=as.numeric(county),
+#          place=as.numeric(place), 
+#          id=as.numeric(paste0(county,place)))%>%
+#   select(id,county, place, month, year, demo=value)%>%
+#   filter(year<2017)%>%
+#   spread(month, demo)
 
-demo=read_excel("construction_data.xlsx", sheet = 3)%>%
-  select(-D1011:-D2021)%>%
-  rename(county=CountyFIPS, place=PlaceFIPS)%>%
-  gather(variable, value, -county:-place)%>%
-  mutate(month=str_sub(str_sub(variable, 1,4),2,4),
+demo=read_excel("construction_data_long.xlsx", sheet = 3)%>%
+  mutate(month=tolower(str_sub(str_sub(month, 1,3))),
          month=ordered(month, levels=c("jan", "feb", "mar", "apr", "may", "jun", "jul", "aug", "sep", "oct", "nov", "dec")),
-         year=as.integer(paste0("20", str_sub(variable, -2,-1))),
-         county=as.numeric(county),
-         place=as.numeric(place), 
+         place=as.numeric(place),
          id=as.numeric(paste0(county,place)))%>%
   select(id,county, place, month, year, demo=value)%>%
-  filter(year<2017)%>%
   spread(month, demo)
 
-mobile=read_excel("construction_data.xlsx", sheet = 4)%>%
-  rename(county=CountyFIPS, place=PlaceFIPS)%>%
-  gather(variable, value, -county:-place)%>%
-  mutate(half_year=ifelse(str_sub(str_sub(variable, 4, 6), 1,1)=="j", "firstHalf", "secondHalf"),
-         year=as.integer(paste0("20", str_sub(variable, -2,-1))),
-         county=as.numeric(county),
+# mobileold=read_excel("construction_data.xlsx", sheet = 4)%>%
+#   rename(county=CountyFIPS, place=PlaceFIPS)%>%
+#   gather(variable, value, -county:-place)%>%
+#   mutate(half_year=ifelse(str_sub(str_sub(variable, 4, 6), 1,1)=="j", "firstHalf", "secondHalf"),
+#          year=as.integer(paste0("20", str_sub(variable, -2,-1))),
+#          county=as.numeric(county),
+#          place=as.numeric(place), 
+#          id=as.numeric(paste0(county,place)))%>%
+#   select(id, county, place, half_year, year, mobile=value)%>%
+#   filter(year<2017)%>%
+#   spread(half_year, mobile)
+
+mobile=read_excel("construction_data_long.xlsx", sheet = 4)%>%
+  mutate(half_year=ifelse(str_sub(str_sub(month, 8, 8), 1,1)=="n", "firstHalf", "secondHalf"),
          place=as.numeric(place), 
          id=as.numeric(paste0(county,place)))%>%
   select(id, county, place, half_year, year, mobile=value)%>%
-  filter(year<2017)%>%
   spread(half_year, mobile)
 
 contact=read.csv("contact_info.csv", stringsAsFactors = FALSE)%>%

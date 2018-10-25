@@ -52,7 +52,7 @@ function(input, output, session) {
       mutate(PopulationChange=Population-lag(Population),
              HousingUnitChange=HousingUnits-lag(HousingUnits))%>%
       select(year, Population, HousingUnits, PopulationChange, HousingUnitChange)%>%
-      filter(year<2017)},
+      filter(year<2019)},
                          digits = 0, 
     include.rownames=FALSE)
 
@@ -62,7 +62,7 @@ output$census=renderTable({
     mutate(PopulationChange=Population-lag(Population),
            HousingUnitChange=HousingUnits-lag(HousingUnits))%>%
     select(year, Population, HousingUnits, PopulationChange, HousingUnitChange)%>%
-    filter(year<2017)},
+    filter(year<2019)},
   digits = 0, 
   include.rownames=FALSE)
 
@@ -70,7 +70,7 @@ output$annex=renderTable({
   annex%>%
     filter(id==id())%>%
     select(year, PopulationChange:GroupQuartersChange)%>%
-    filter(year<2017)},
+    filter(year<2019)},
   digits = 0, 
   include.rownames=FALSE)
 
